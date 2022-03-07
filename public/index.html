@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dice Game</title>
+
+  <link rel="shortcut icon" href="images/favicon/favicon.ico">
+
+  <!-- FONT AWESOME LINK -->
+  <script src="https://kit.fontawesome.com/159d9adc3c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Orbitron&family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <section class="load-screen">
+    <h1>Welcome to Dice Game</h1>
+    <h2>Please write down the names of the contestants...</h2>
+
+    <form class="nameForm" action="index.html" method="post">
+      <fieldset>
+        <legend>Please provide the information...</legend>
+        <label>Enter first player's name...</label>
+        <!-- autocomplete="off" means it will not keep the names that are written here in screen reload -->
+        <input id="first-player-name" type="text" name="player1" placeholder="Player1 Name" autocomplete="off" required>
+
+        <label>Enter second player's name...</label>
+        <!-- autocomplete="off" means it will not keep the names that are written here in screen reload -->
+        <input id="second-player-name" type="text" name="player2" placeholder="Player2 Name" autocomplete="off" required>
+
+        <!-- <input class="submit-btn" type="submit" name="submit-button" value="Start"> -->
+        <button class="submit-btn" type="button" name="submit-button">Start</button>
+      </fieldset>
+    </form>
+
+
+  </section>
+
+  <section class="game-screen">
+    <div class="dice-boxes">
+      <div class="dice-box-left dice-box">
+        <h3 class="player">Player1</h3>
+        <h4>0</h4>
+        <img src="images/dice1.png" alt="dice-img">
+      </div>
+
+      <div class="dice-box-right dice-box">
+        <h3 class="player">Player2</h3>
+        <h4>0</h4>
+        <img src="images/dice1.png" alt="dice-img">
+      </div>
+    </div>
+    <button class="roll-btn" type="button" name="roll-button">Roll</button>
+  </section>
+
+  <section class="footer">
+    <div class="footer-message">
+      <p>Roll the Dice...</p>
+      <i class="fas fa-thumbs-up thumbs-hide"></i>
+      <i class="fas fa-thumbs-down thumbs-hide"></i>
+    </div>
+
+    <div class="footer-message">
+      <p>Roll the Dice...</p>
+      <i class="fas fa-thumbs-up thumbs-hide"></i>
+      <i class="fas fa-thumbs-down thumbs-hide"></i>
+    </div>
+  </section>
+
+<script src="index.js"></script>
+</body>
+
+</html>
